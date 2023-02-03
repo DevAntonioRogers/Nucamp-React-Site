@@ -10,7 +10,7 @@ const campsitesSlice = createSlice({
   initialState
 })
 
-export const camsitesReducer = campsitesSlice.reducer
+export const campsitesReducer = campsitesSlice.reducer
 
 
 
