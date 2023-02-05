@@ -12,14 +12,16 @@ import { fetchCampsites } from './features/campsites/campsitesSlice';
 import './App.css';
 import { fetchPartners } from './features/partners/partnersSlice'
 import { fetchPromotions } from './features/promotions/promotionsSlice'
+import { fetchComments } from './features/comments/commentSlice'
 
 function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(fetchCampsites());
-    dispatch(fetchPartners())
-    dispatch(fetchPromotions())
+    dispatch(fetchPartners());
+    dispatch(fetchPromotions());
+    dispatch(fetchComments());
   }, [dispatch]);
 
   return (
